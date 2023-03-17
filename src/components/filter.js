@@ -84,21 +84,21 @@ const Filter = ({ handleDataFilter, handleLoading, handleQuery, keyword, setKeyw
   
   return (
       <div className="row justify-content-center pt-3">
-        <div className="col-sm-4 col-8 px-0 d-flex justify-content-start">
+        <div className="col-sm-6 col-8 px-0 d-flex justify-content-start">
           <label className="showCaret">
               <div className="text-start">
                 Filter by keyword:&nbsp;
               </div>
-                <input className="text-box" type="text" value={keyword} style={{ width: "45vw", border: "2px solid #1DA1F2", borderRadius: "2px"}} onChange={handleKeywordChange} />
+                <input className="text-box" type="text" value={keyword} style={{width: "45vw", border: "2px solid #1DA1F2", borderRadius: "2px"}} onChange={handleKeywordChange} />
           </label>
         </div>
-        <div className="col-sm-4 col-8 p-0 d-flex justify-content-sm-end justify-content-start">
+        <div className="col-sm-2 col-8 p-0 d-flex justify-content-sm-end justify-content-start">
           <label>
               <div className="text-start">
                 Filter by rating:&nbsp;
               </div>
               <div>
-                <select className="text-box" style={{ height: "29.2px", width: "20vw", border: "2px solid #1DA1F2", borderRadius: "2px"}} value={rating} onChange={handleRatingChange}>
+                <select className="text-box me-sm-0 me-5" style={{ height: "29.2px", width: "20vw", border: "2px solid #1DA1F2", borderRadius: "2px"}} value={rating} onChange={handleRatingChange}>
                 <option value="">All ratings</option>
                 <option value="1">1 Star</option>
                 <option value="2">2 Stars</option>
